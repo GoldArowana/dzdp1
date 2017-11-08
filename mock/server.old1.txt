@@ -1,0 +1,57 @@
+import Koa from 'koa';
+
+var router = require('koa-router')();
+const app = new Koa();
+app.use(async (ctx, next) => {
+    const start = new Date();
+    await next();
+    const ms = new Date() - start;
+    console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
+});
+
+var homeAdData = require('./home/ad.js')
+router.get('/api/homead', async (ctx, next) => {
+    ctx.response.body = homeAdData
+});
+
+router.get('/', async (ctx, next) => {
+    ctx.response.body = 'hello koa !'
+});
+
+router.get('/api', async (ctx, next) => {
+    ctx.response.body = 'test data'
+});
+
+router.get('/api/1', async (ctx, next) => {
+    ctx.response.body = 'test data 1'
+});
+
+router.get('/api/2', async (ctx, next) => {
+    ctx.response.body = {
+        a: 1,
+        b: '123'
+    }
+});
+
+router.post('/api/post', async (ctx, next) => {
+    console.log(ctx.request.body);
+    ctx.response.body = JSON.stringify(ctx.request.body)
+});
+// response
+// app.use((ctx) => {
+//     ctx.body = 'Hello Koa in app-async.js';
+// });
+// app.use(async (ctx, next) => {
+//     await next();
+//     ctx.response.type = 'text/html';
+//     ctx.response.body = '<h1>Hello, koa2!</h1>';
+// });
+// router.post('/post', function (ctx, next) {
+//     ctx.response.type = 'text/html';
+//     ctx.body = "you post data:";
+// });
+app.use(router.routes())
+    .use(router.allowedMethods());
+app.listen(8090);
+console.log("系统启动，端口：8090");
+module.exports = app;

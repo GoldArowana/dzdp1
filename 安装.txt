@@ -1,0 +1,48 @@
+安装webpack
+npm install webpack webpack-dev-server --save-dev
+
+安装react-dom
+npm i react react-dom --save
+
+安装react路由
+npm install react-router-dom --save
+
+
+安装redux
+npm install redux --save
+npm install react-redux --save
+npm install  redux-devtools-extension --save-dev
+
+安装fetch
+npm install whatwg-fetch --save
+npm install es6-promise --save
+
+安装koa    http://nekomiao.me/2017/05/23/koa2-react-webpack-deployment/
+npm install koa koa-body koa-router --save-dev
+npm install babel-core babel-polyfill babel-register babel-preset-env --save-dev
+当前项目中新建一个.babelrc
+在.babelrc中添加如下配置,这样Koa2 项目中就可以使用ES6的语法
+
+{
+  "presets": ["env"]
+}
+
+
+安装nodemon
+npm install nodemon -g
+
+
+mixin的作用就是判断props或者state没变的时候，不触发更新，但是做的是浅对比
+npm install react-addons-pure-render-mixin --save
+
+
+安装 蚂蚁金服UI
+npm install antd --save
+
+
+
+    ==============================================================
+    改mock/index.js
+    改src/containers/Home/subpage/Ad.js,加了几句cnosole.log()
+    安装koa2-cors     npm install koa2-cors --save
+    http://www.jianshu.com/p/5b3acded5182

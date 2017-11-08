@@ -1,0 +1,55 @@
+#home-header {
+    /*background-color: greenyellow;*/
+    /*padding: 10px;*/
+    background-image: url("../../static/img/hrbust-l.jpg");
+    padding:4% 5% 20% 5%;
+    background-size:100% auto;
+}
+
+#home-header > * {
+    color: whitesmoke;
+    font-size: 11px;
+    line-height: 1;
+}
+
+.home-header-left {
+    width: 80px;
+    text-align: left;
+    margin: 4px 0;
+}
+
+.home-header-middle {
+    width: auto;
+    margin: -1px 30px 0 60px;
+}
+
+.home-header-middle > .search-container {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.home-header-middle > .search-container i {
+    color: #ccc !important;
+}
+
+.home-header-middle > .search-container input {
+    font-size: 14px !important;
+    font-weight: normal;
+}
+
+.home-header-right {
+    width: 30px;
+    margin: 5px 0;
+    text-align: right;
+}
+
+.inputSearch {
+    width: 90%;
+    padding-left:4%;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px
+}
