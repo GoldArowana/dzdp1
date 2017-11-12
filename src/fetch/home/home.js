@@ -1,7 +1,7 @@
 import { get } from '../get'
 
 export function getAdData() {
-    const result = get('http://localhost:8090/api/22');
+    const result = get('http://localhost:8090/api/homead');
     return result
 }
 

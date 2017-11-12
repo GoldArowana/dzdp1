@@ -4,6 +4,7 @@ import HomeHeader from '../../components/HomeHeader/index'
 import Category from '../../components/Category/index'
 import {connect} from 'react-redux'
 import Ad from './subpage/ad'
+import LikeList from './subpage/List'
 
 class Home extends React.Component {
     constructor (props, context) {
@@ -16,8 +17,9 @@ class Home extends React.Component {
             <div>
                 <HomeHeader cityName={this.props.userinfo.cityName}/>
                 <Category style={{marginTop:"70%"}}/>
-                <div style={{height:"6px"}}></div>
+                <div style={{height:"6px"}}/>
                 <Ad/>
+                <LikeList />
             </div>
         )
     }
