@@ -2,6 +2,7 @@ import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { getListData } from '../../../fetch/home/home'
 import ListCompoent from '../../../components/ListCompoent'
+import LoadMore from '../../../components/LoadMore'
 import './style.css'
 
 class LikeList extends React.Component {
@@ -23,6 +24,11 @@ class LikeList extends React.Component {
                     this.state.data.length
                         ? <ListCompoent data={this.state.data}/>
                         : <div>{/* 加载中... */}</div>
+                }
+                {
+                    this.state.hasMore
+                        ? <LoadMore isLoadingMore={this.state.isLoadingMore} loadMoreFn={this.loadMoreData.bind(this)}/>
+                        : ''
                 }
             </div>
         )
@@ -49,7 +55,7 @@ class LikeList extends React.Component {
         const result = getListData(cityName, page);
         this.resultHandle(result);
 
-        // 增加 page 技术
+        // 增加 page 计数
         this.setState({
             page: page + 1,
             isLoadingMore: false
@@ -65,7 +71,7 @@ class LikeList extends React.Component {
 
             this.setState({
                 hasMore: hasMore,
-                // 注意，这里讲最新获取的数据，拼接到原数据之后，使用 concat 函数
+                // 这里将最新获取的数据，使用concat函数 拼接到原数据之后，
                 data: this.state.data.concat(data)
             })
         }).catch(ex => {

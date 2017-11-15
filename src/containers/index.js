@@ -20,7 +20,7 @@ class App extends React.Component {
             <div>
                 {
                     this.state.initDone
-                        ? this.props.myChildren()
+                        ? this.props.children
                         : <div>
                             <img width={"100%"} src={require('../static/img/cat-loading.gif')} alt={"加载中"}/>
                             <div align="center">加载中</div>
@@ -38,7 +38,7 @@ class App extends React.Component {
 
         this.props.userInfoActions.update({
             cityName: cityName
-        })
+        });
 
         setTimeout(() => {
             this.setState({

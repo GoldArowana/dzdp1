@@ -6,6 +6,7 @@ import {connect} from 'react-redux'
 import Ad from './subpage/ad'
 import LikeList from './subpage/List'
 
+// import {withRouter} from 'react-router-dom'
 class Home extends React.Component {
     constructor (props, context) {
         super(props, context);
@@ -16,10 +17,10 @@ class Home extends React.Component {
         return (
             <div>
                 <HomeHeader cityName={this.props.userinfo.cityName}/>
-                <Category style={{marginTop:"70%"}}/>
-                <div style={{height:"6px"}}/>
+                <Category style={{marginTop: "70%"}}/>
+                <div style={{height: "6px"}}/>
                 <Ad/>
-                <LikeList />
+                <LikeList/>
             </div>
         )
     }
@@ -28,7 +29,7 @@ class Home extends React.Component {
 
 function mapStateToProps (state) {
     return {
-        userinfo:state.userinfo
+        userinfo: state.userinfo
     }
 }
 

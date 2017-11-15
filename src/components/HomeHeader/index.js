@@ -1,7 +1,9 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import './style.css'
 import {Input} from 'antd'
+
 
 class HomeHeader extends React.Component {
     constructor (props, context) {
@@ -14,9 +16,11 @@ class HomeHeader extends React.Component {
             <div>
                 <div id="home-header" className="clear-fix">
                     <div className="home-header-left float-left">
-                        <i className="fa fa-map-marker fa-lg"/>
-                        <span>{this.props.cityName}</span>
-                        <i className="fa fa-angle-double-down"/>
+                        <Link to={"/city"} style={{color:'yellow'}}>
+                            <i className="fa fa-map-marker fa-lg"/>
+                            <span>{this.props.cityName}</span>
+                            <i className="fa fa-angle-double-down"/>
+                        </Link>
                     </div>
                     <div className="home-header-right float-right">
                         <i className="fa fa-user-circle-o fa-lg"/>
