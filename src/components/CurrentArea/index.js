@@ -11,7 +11,7 @@ class CurrentArea extends React.Component {
     render() {
         return (
             <div className="current-city">
-                <h2>当前位置：{this.props.cityName}</h2>
+                <h2>你所在的校区：{this.props.cityName}</h2>
             </div>
         )
     }

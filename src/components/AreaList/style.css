@@ -1,6 +1,6 @@
 .city-list-container {
     /*background: radial-gradient(white, lightyellow, lightpink); !* 标准的语法（必须放在最后） *!*/
-    background: radial-gradient(white, lightyellow, lightpink); /* 标准的语法（必须放在最后） */
+    /*background: radial-gradient(white, lightyellow, lightpink); !* 标准的语法（必须放在最后） *!*/
     padding: 10px 15px 20px 15px;
 }
 

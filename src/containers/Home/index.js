@@ -16,7 +16,7 @@ class Home extends React.Component {
     render () {
         return (
             <div>
-                <HomeHeader cityName={this.props.userinfo.cityName}/>
+                <HomeHeader cityName={this.props.userinfo.cityName} {...this.props}/>
                 <Category style={{marginTop: "70%"}}/>
                 <div style={{height: "6px"}}/>
                 <Ad/>
