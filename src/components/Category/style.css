@@ -17,7 +17,7 @@
     height: auto;
 }
 
-.carousel-item > ul > li {
+ul > a > li {
     display: block;
     list-style: none;
     width: 20%;
@@ -30,61 +30,61 @@
     font-size: 14px;
 }
 
-.carousel-item > ul > li.lesson {
+li.lesson {
     background-image: url("../../static/img/functionImageIcon/java2.png");
 }
 
-.carousel-item > ul > li.science {
+li.science {
     background-image: url("../../static/img/functionImageIcon/science.png");
 }
 
-.carousel-item > ul > li.shopping {
+li.shopping {
     background-image: url("../../static/img/functionImageIcon/supermarket.png");
 }
 
-.carousel-item > ul > li.live {
+li.live {
     background-image: url("../../static/img/functionImageIcon/cat2.png");
 }
 
-.carousel-item > ul > li.sporting {
+li.sporting {
     background-image: url("../../static/img/functionImageIcon/basketball.png");
 }
 
-.carousel-item > ul > li.dinner1 {
+li.dinner1 {
     background-image: url("../../static/img/functionImageIcon/food-dinner1.png");
 
 }
 
-.carousel-item > ul > li.selfDinner {
+li.selfDinner {
     background-image: url("../../static/img/functionImageIcon/pizza.png");
 }
 
-.carousel-item > ul > li.dinner2 {
+li.dinner2 {
     background-image: url("../../static/img/functionImageIcon/ice-cream2.png");
 
 }
 
-.carousel-item > ul > li.onDoorFood {
+li.onDoorFood {
     background-image: url("../../static/img/functionImageIcon/motorcycle.png");
 }
 
-.carousel-item > ul > li.hourWork {
+li.hourWork {
     background-image: url("../../static/img/functionImageIcon/hourWork.png");
 }
 
-.carousel-item > ul > li.learning {
+li.learning {
 }
 
-.carousel-item > ul > li.trainTicket {
+li.trainTicket {
 }
 
-.carousel-item > ul > li.job {
+li.job {
 }
 
-.carousel-item > ul > li.graduate {
+li.graduate {
 }
 
-.carousel-item > ul > li.allFunction {
+li.allFunction {
 }
 
 .carousel-item.index-container {
@@ -107,7 +107,7 @@
     margin: 0 3px;
 }
 
-.carousel-item.index-container > ul > li.selected {
+li.selected {
     background-color: skyblue;
 }
 

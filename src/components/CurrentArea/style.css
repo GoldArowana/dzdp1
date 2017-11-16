@@ -1,6 +1,6 @@
 .current-city {
     /*background: radial-gradient(whitesmoke, skyblue, blueviolet); !* 标准的语法（必须放在最后） *!*/
-    background: linear-gradient(lightyellow, lightpink);
+    /*background: linear-gradient(lightyellow, lightpink);*/
     /*background-color: #cccccc;*/
     text-align: center;
     padding: 30px 0;
