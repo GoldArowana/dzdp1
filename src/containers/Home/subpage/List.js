@@ -41,7 +41,13 @@ class LikeList extends React.Component {
     loadFirstPageData() {
         const cityName = this.props.cityName;
         const result = getListData(cityName, 0);
-        this.resultHandle(result)
+        this.resultHandle(result);
+        const page = this.state.page;
+        // 增加 page 计数
+        this.setState({
+            page: page + 1,
+            isLoadingMore: false
+        })
     }
     // 加载更多数据
     loadMoreData() {

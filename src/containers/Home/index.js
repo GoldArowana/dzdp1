@@ -20,7 +20,7 @@ class Home extends React.Component {
                 <Category style={{marginTop: "70%"}}/>
                 <div style={{height: "6px"}}/>
                 <Ad/>
-                <LikeList/>
+                <LikeList cityName={this.props.userinfo.cityName}/>
             </div>
         )
     }
