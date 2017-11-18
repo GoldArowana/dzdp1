@@ -25,7 +25,7 @@ class SearchHeader extends React.Component {
         )
     }
     clickHandle() {
-        window.history.back()
+        this.props.history.push('/home')
     }
     enterHandle(value) {
         this.props.history.push('/search/all/' + encodeURIComponent(value))

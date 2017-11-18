@@ -13,7 +13,7 @@ const initialState = {
     hasMore: false,
     isLoadingMore: false,
     page: 0
-}
+};
 
 class SearchList extends React.Component {
     constructor(props, context) {
@@ -45,7 +45,7 @@ class SearchList extends React.Component {
     loadFirstPageData() {
         const cityName = this.props.userinfo.cityName;
         const keyword = this.props.keyword || '';
-        const category = this.props.searchType;
+        const category = this.props.category;
         const result = getSearchData(0, cityName, category, keyword)
         this.resultHandle(result)
     }
@@ -59,7 +59,7 @@ class SearchList extends React.Component {
         const cityName = this.props.userinfo.cityName;
         const page = this.state.page;
         const keyword = this.props.keyword || '';
-        const category = this.props.searchType;
+        const category = this.props.category;
         const result = getSearchData(page, cityName, category, keyword);
         this.resultHandle(result);
 
@@ -95,10 +95,9 @@ class SearchList extends React.Component {
     // 处理重新搜索
     componentDidUpdate(prevProps, prevState) {
         const keyword = this.props.keyword;
-        const category = this.props.searchType;
-
+        const category = this.props.category;
         // 搜索条件完全相等时，忽略。重要！！！
-        if (keyword === prevProps.keyword && category === prevProps.searchType) {
+        if (keyword === prevProps.keyword && category === prevProps.category) {
             return
         }
 
