@@ -23,7 +23,7 @@
 
 .city-list-container li span {
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid orange;
     font-size: 16px;
     line-height: 2;
     margin-top: 15px;
