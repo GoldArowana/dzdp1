@@ -42,7 +42,7 @@ npm install antd --save
 
 
     ==============================================================
-    改mock/index.js
+    改mock/info.js
     改src/containers/Home/subpage/Ad.js,加了几句cnosole.log()
     安装koa2-cors     npm install koa2-cors --save
     http://www.jianshu.com/p/5b3acded5182

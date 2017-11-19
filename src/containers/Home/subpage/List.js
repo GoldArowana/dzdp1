@@ -1,7 +1,7 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { getListData } from '../../../fetch/home/home'
-import ListCompoent from '../../../components/ListCompoent'
+import ListCompoent from '../../../components/ProductListCompoent'
 import LoadMore from '../../../components/LoadMore'
 import './style.css'
 

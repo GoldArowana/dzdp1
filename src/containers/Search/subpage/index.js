@@ -2,7 +2,7 @@ import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { connect } from 'react-redux'
 
-import ListCompoent from '../../../components/ListCompoent'
+import ListCompoent from '../../../components/ProductListCompoent'
 import LoadMore from '../../../components/LoadMore'
 
 import { getSearchData } from '../../../fetch/search/search'
