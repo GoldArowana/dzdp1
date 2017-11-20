@@ -5,7 +5,9 @@
     padding:4% 5% 20% 5%;
     background-size:100% auto;
 }
-
+a{
+    color: white;
+}
 #home-header > * {
     color: whitesmoke;
     font-size: 11px;

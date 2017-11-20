@@ -11,6 +11,7 @@ import {
 import Home from '../containers/Home/index'
 import City from '../containers/City/index'
 import User from '../containers/User/index'
+import Login from '../containers/Login/index'
 import Search from '../containers/Search/index'
 import Detail from '../containers/Detail/index'
 import NotFound from '../containers/NotFound/404'
@@ -29,7 +30,8 @@ export default class RouterMap extends React.Component {
                             <Route exact path='/' component={Home}/>
                             <Route exact path='/home' component={Home}/>
                             <Route path='/city' component={City}/>
-                            <Route path='/User' component={User}/>
+                            <Route path='/login/:router?' component={Login}/>
+                            <Route path='/user' component={User}/>
                             <Route path='/search/:searchType/:keyword?' component={Search}/>
                             <Route path='/detail/:id' component={Detail}/>
                             <Route path='*' component={NotFound}/>

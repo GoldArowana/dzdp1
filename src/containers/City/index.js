@@ -6,9 +6,10 @@ import Header from '../../components/Header'
 import CurrentArea from '../../components/CurrentArea'
 import AreaList from '../../components/AreaList'
 import * as userInfoActionsFromOtherFile from '../../actions/userinfo'
-import { CITYNAME } from '../../config/localStoreKey'
+import {CITYNAME} from '../../config/localStoreKey'
 import localStore from '../../util/localStore'
 import './style.css'
+
 class City extends React.Component {
     constructor (props, context) {
         super(props, context);
@@ -25,7 +26,7 @@ class City extends React.Component {
         )
     }
 
-    changeCity(newCity) {
+    changeCity (newCity) {
         if (newCity == null) {
             return
         }

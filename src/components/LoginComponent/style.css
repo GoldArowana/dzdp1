@@ -1,0 +1,60 @@
+#login-container {
+    width: 300px;
+    margin: 160px auto 0 auto;
+    margin-top: 60px;
+}
+
+#login-container .input-container {
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#login-container .input-container input {
+    font-size: 16px;
+    display: block;
+}
+
+#login-container .input-container i {
+    color: rgb(233, 32, 61);
+    width: 16px;
+    float: left;
+    margin-top: 3px;
+}
+
+#login-container .phone-container input {
+    margin-left: 30px;
+}
+
+#login-container .password-container {
+    margin-top: 10px;
+}
+
+#login-container .password-container input {
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+#login-container .password-container button {
+    width: 80px;
+    height: 100%;
+    font-size: 16px;
+    color: rgb(233, 32, 61);
+    border: 0;
+    background-color: #fff;
+    text-align: center;
+    float: right;
+}
+
+#login-container .btn-login {
+    width: 100%;
+    text-align: center;
+    background: repeating-linear-gradient(to right, white, lightpink 10%, lightyellow 20%,lightskyblue 30%,whitesmoke 40%);  /* 标准的语法（必须放在最后） */
+    color: black;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 5px 0;
+}

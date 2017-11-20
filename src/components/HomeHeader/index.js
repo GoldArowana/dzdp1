@@ -19,14 +19,16 @@ class HomeHeader extends React.Component {
             <div>
                 <div id="home-header" className="clear-fix">
                     <div className="home-header-left float-left">
-                        <Link to={"/city"} style={{color:'yellow'}}>
+                        <Link to={"/city"} style={{color: 'yellow'}}>
                             <i className="fa fa-map-marker fa-lg"/>
                             <span>{this.props.cityName}</span>
                             <i className="fa fa-angle-double-down"/>
                         </Link>
                     </div>
                     <div className="home-header-right float-right">
-                        <i className="fa fa-user-circle-o fa-lg"/>
+                        <Link to="/login">
+                            <i className="fa fa-user-circle-o fa-lg"/>
+                        </Link>
                     </div>
                     <div className="home-header-middle">
                         <div className="search-container">
@@ -38,7 +40,8 @@ class HomeHeader extends React.Component {
             </div>
         )
     }
-    enterHandle(value) {
+
+    enterHandle (value) {
         this.props.history.push('/search/all/' + encodeURIComponent(value))
     }
 }
