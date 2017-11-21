@@ -44,7 +44,7 @@ class Login extends React.Component {
     }
 
     goUserPage () {
-        this.props.history.push('/user')
+        this.props.history.push('/home')
     }
 
     loginHandle (username) {

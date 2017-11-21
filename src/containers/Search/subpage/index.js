@@ -46,7 +46,7 @@ class SearchList extends React.Component {
         const cityName = this.props.userinfo.cityName;
         const keyword = this.props.keyword || '';
         const category = this.props.category;
-        const result = getSearchData(0, cityName, category, keyword)
+        const result = getSearchData(0, cityName, category, keyword);
         this.resultHandle(result)
     }
     // 加载更多数据
